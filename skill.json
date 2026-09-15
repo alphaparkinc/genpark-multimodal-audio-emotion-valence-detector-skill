@@ -1,0 +1,38 @@
+{
+  "name": "genpark-multimodal-audio-emotion-valence-detector-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Real-time acoustic vocal emotion, prosodic valence, and customer frustration analyzer triggering empathetic agent de-escalation protocols.",
+  "homepage": "https://genpark.ai/mcp",
+  "author": "alphaparkinc",
+  "category": "voice-ai",
+  "tags": [
+    "audio-emotion",
+    "valence-detection",
+    "voice-agents",
+    "frustration-analysis",
+    "prosody-dsp"
+  ],
+  "inputs": {
+    "pitch_hz_variance": {
+      "type": "number",
+      "default": 85.4
+    },
+    "speech_rate_syllables_sec": {
+      "type": "number",
+      "default": 6.2
+    }
+  },
+  "outputs": {
+    "acoustic_arousal_score": {
+      "type": "number"
+    },
+    "emotional_valence_score": {
+      "type": "number"
+    },
+    "frustration_detected": {
+      "type": "boolean"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
